@@ -1,2 +1,18 @@
-# Readme-generator
-Command line README file generator using node.js
+
+# Project Title: $(projectName)
+---
+## Description
+
+$(description_text)
+
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Licence](#licence)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+
+## Questions
+
