@@ -1,9 +1,9 @@
 
-# Project Title: $(projectName)
+# Project Title: Readme-test
 ---
 ## Description
 
-$(description_text)
+A test project to generate a README markdown file.
 
 ## Table of Contents
 - [Description](#description)

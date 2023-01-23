@@ -47,11 +47,11 @@ function promptUser() {
 
 
       const md = `
-# Project Title: $(projectName)
+# Project Title: ${projectName}
 ---
 ## Description
 
-$(description_text)
+${description_text}
 
 ## Table of Contents
 - [Description](#description)
