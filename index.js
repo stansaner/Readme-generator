@@ -42,7 +42,7 @@ function promptUser() {
                   'GNU General Public License v2.0', 'GNU General Public License v3.0', 
                   'GNU Lesser General Public License family', 'GNU Lesser General Public License v2.1',
                   'GNU Lesser General Public License v3.0', 'ISC', 'LaTeX Project Public License v1.3c',
-                  'Microsoft Public License', 'MIT', 'Mozilla Public License 2.0', 
+                  'Microsoft Public License', 'MIT', 'Mozilla Public License 2.0', 'None',
                   'Open Software License 3.0', 'PostgreSQL License', 'SIL Open Font License 1.1',
                   'University of Illinois/NCSA Open Source License', 'The Unlicense', 'zLib License']
       }
