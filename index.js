@@ -3,8 +3,9 @@ const inquirer = require("inquirer");
 // How to use inquirer
 // https://www.digitalocean.com/community/tutorials/nodejs-interactive-command-line-prompts
 
-// const fs = require("fs");
 // const path = require('path');
+// const fs = require("fs");
+
 
 // const generateMarkdown = require("./utils/generateMarkdown");
 
@@ -74,7 +75,7 @@ ${description_text}
 
 // function to initialize program
 function init() {
-   promptUser();
+   promptUser();   
 }
 
 // function call to initialize program
