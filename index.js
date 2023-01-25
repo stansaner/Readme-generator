@@ -28,6 +28,11 @@ function promptUser() {
          message: 'Type installation instructions.'
       },
       {
+         type: 'editor',
+         name: 'usage',
+         message: 'Type usage instructions.'
+      },
+      {
          type: 'rawlist',
          name: 'licence',
          message: 'Choose which licence to use:',
@@ -47,6 +52,16 @@ function promptUser() {
             'University of Illinois/NCSA Open Source License', 'The Unlicense', 'zLib License']
       },
       {
+         type: 'editor',
+         name: 'contributing',
+         message: 'Describe, how to contribute.'
+      },
+      {
+         type: 'editor',
+         name: 'tests',
+         message: 'Provide test instructions.'
+      },
+      {
          name: 'github_user',
          message: 'What is your github user name?'
       },
@@ -61,7 +76,10 @@ function promptUser() {
       const projectName = answers.project_title;
       const description_text = answers.description_content;
       const installation_text = answers.installation;
+      const usage_text = answers.usage;
       const licence_type = answers.licence;
+      const contributing_text = answers.contributing;
+      const tests_text = answers.tests;
       const githubUser = answers.github_user;
       const userEmail = answers.user_email;
       let badge = '';
@@ -191,9 +209,21 @@ ${description_text}
 
 ${installation_text}
 
+## Usage
+
+${usage_text}
+
 ## Licence
 
 ${licence_type}
+
+## Contributing
+
+${contributing_text}
+
+## Tests
+
+${tests_text}
 
 ## Questions
 
