@@ -45,6 +45,14 @@ function promptUser() {
             'Microsoft Public License', 'MIT', 'Mozilla Public License 2.0', 'None',
             'Open Software License 3.0', 'PostgreSQL License', 'SIL Open Font License 1.1',
             'University of Illinois/NCSA Open Source License', 'The Unlicense', 'zLib License']
+      },
+      {
+         name: 'github_user',
+         message: 'What is your github user name?'
+      },
+      {
+         name: 'user_email',
+         message: 'Please type your email address.'
       }
    ]).then(answers => {
 
@@ -52,7 +60,10 @@ function promptUser() {
 
       const projectName = answers.project_title;
       const description_text = answers.description_content;
+      const installation_text = answers.installation;
       const licence_type = answers.licence;
+      const githubUser = answers.github_user;
+      const userEmail = answers.user_email;
       let badge = '';
 
       // Markdown Licence Badges where available
@@ -159,30 +170,41 @@ function promptUser() {
 
 
       const md = `
-         # Project Title: ${projectName}
+# Project Title: ${projectName}
 
-         ${badge}
+${badge}
 
-         ## Description
+## Description
 
-         ${description_text}
+${description_text}
 
-         ## Table of Contents
-         - [Description](#description)
-         - [Installation](#installation)
-         - [Usage](#usage)
-         - [Licence](#licence)
-         - [Contributing](#contributing)
-         - [Tests](#tests)
-         - [Questions](#questions)
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Licence](#licence)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
-         ## Licence
+## Installation
 
-         ${licence_type}
+${installation_text}
 
-         ## Questions
+## Licence
+
+${licence_type}
+
+## Questions
+
+For more questions please visit:
+[https://github.com/${githubUser}](https://github.com/${githubUser})
+
+or send an email to: ${userEmail}
 
       `;
+
+
 
       var data = md;
       readMe.writeReadmeFile(data);
