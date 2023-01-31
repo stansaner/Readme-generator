@@ -73,6 +73,8 @@ Choose the applicable one using up/down arrows and confirm with Enter.
 After answering all questions the application creates a directory "output" if it does
 not exist already. It then places the new README.md file in that output directory.
 
+This [walkthrough video](https://drive.google.com/file/d/1-xgxMxA3mi1btMWXZvdBZvDkmFGRZA2D/view) demonstrates how to use this application.
+
 
 ## Licence
 
